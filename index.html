@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Dancing+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">   
+
+    <title>Biscoito da sorte</title>
+</head>
+<body>
+    <div class="screen1">
+        <div>
+            <h1 class="centralizar">Qual a sua sorte de hoje?</h1>
+            <p id="paragrafo1" class="centralizar">Abra o biscoito e descubra!</p>
+            <div id="biscoitoFechado">
+                <img id="imgBiscoitoFechado" src="./biscoito_da_sorte.png" alt="Biscoito da sorte fechado" onmouseenter="vibrarImagem(this)">
+            </div>
+        </div>
+    </div>
+
+    <div class="screen2 hide">
+        <div>
+            <h2 class="centralizar">Aqui está a sua sorte de hoje:</h2>
+            <p id="mensagem" class="centralizar"></p>
+            <div id="biscoitoAberto">
+                <img src="./opened-cookie.png" alt="Biscoito da sorte aberto">
+            </div>
+            <button id="btnOutroBiscoito">Abra outro biscoito</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
